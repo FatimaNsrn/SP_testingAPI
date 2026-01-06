@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Assignments</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page-container">
+    <div class="card">
+        <h2>Search Assignments</h2>
+
+        <input id="searchCourse" placeholder="Enter Course Name">
+        <button onclick="searchAssignments()">Search</button>
+
+        <a class="back-link" href="/">← Back to Planner</a>
+    </div>
+</div>
+
+<div class="list hidden">
+    <ul id="pendingList"></ul>
+    <ul id="completedList"></ul>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

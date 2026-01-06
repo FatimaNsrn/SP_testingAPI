@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Assignment</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page-container">
+    <div class="card">
+        <h2>Add New Assignment</h2>
+
+        <input id="course" placeholder="Course Name (e.g. CS101)">
+        <input id="title" placeholder="Assignment Title">
+        <input id="description" placeholder="Description">
+        <input id="deadline" type="date">
+
+        <select id="priority">
+            <option value="Low">Low Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="High">High Priority</option>
+        </select>
+
+        <button onclick="createAssignment()">Add Assignment</button>
+        <p id="message"></p>
+
+        <a class="back-link" href="/">← Back to Planner</a>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

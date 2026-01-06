@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1 class="title">Study Planner</h1>
+
+<div class="top-boxes">
+    <div class="box" onclick="toggleSection('pending')">
+        📌 Pending Assignments
+    </div>
+    <div class="box" onclick="toggleSection('completed')">
+        ✅ Completed Assignments
+    </div>
+</div>
+
+<div id="pending" class="list hidden">
+    <ul id="pendingList"></ul>
+</div>
+
+<div id="completed" class="list hidden">
+    <ul id="completedList"></ul>
+</div>
+
+<div class="bottom-boxes">
+    <div class="box action" onclick="location.href='/add'">
+        ➕ Add Assignment
+    </div>
+    <div class="box action" onclick="location.href='/search'">
+        🔍 Search Assignment
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
